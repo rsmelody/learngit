@@ -1,0 +1,31 @@
+<?php include TPL_PATH . "/header.phtml"; ?>
+<div class="content">
+	<div class="primary">
+		<div class="register">
+			<form name="register" method="post">
+				<div class="registerLine">
+					<label for="username">用户名</label>
+					<input type="text" name="username" id="username" value="" />
+				</div>
+				<div class="registerLine">
+					<label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+					<input type="password" name="password" id="password" />
+				</div>
+				<div class="registerLine">
+					<label for="email">邮&nbsp;&nbsp;&nbsp;&nbsp;箱</label>
+					<input type="text" name="email" id="email" />
+				</div>
+				<div class="registerLine">
+					<input type="submit" name="register" value="注册" />
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="secondary">
+		<div id="intro">
+			<h1>Build links better, togger.</h1>
+		</div>
+	</div>
+
+</div>
+<?php include TPL_PATH . "/footer.phtml"; ?>

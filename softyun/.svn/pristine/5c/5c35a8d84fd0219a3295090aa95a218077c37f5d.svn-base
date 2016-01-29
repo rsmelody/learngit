@@ -1,0 +1,33 @@
+<?php include TPL_PATH . "header.phtml"; ?>
+<div class="content">
+	<div class="urls">
+	<div class="urlLine firstLine">
+		<div class="title">Title</div>
+		<div class="url">Url</div>
+	</div>
+	<?php 
+		foreach ($urls as $url) {
+	?>
+			<div class="urlLine">
+			<div class="title">
+		<?php
+			echo $url['title'] . "&nbsp;&nbsp;";
+		?>
+			</div>
+			<div class="url">
+		<?php
+			echo "<a href=" . $url['url'] . " target=\"_blank\">" . $url['url'] . "</a>";
+		?>
+			</div>
+			<div class="op">
+				<input type="hidden" class="urlId" value="<?php echo $url['urlId']; ?>" />
+				<a class="editBtn" href="index.php?con=urls&act=edit&urlId=<?php echo $url['urlId']; ?>">修改</a>
+				<a class="deleteBtn" href="javascript:;">删除</a>
+			</div>
+		</div>
+			<?php
+		}
+	?>
+	</div>
+</div>
+<?php include TPL_PATH . "footer.phtml"; ?>

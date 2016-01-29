@@ -1,0 +1,91 @@
+BODY{
+	margin: 15pt 15pt 30pt 15pt; 
+	font-size: 11pt;
+	line-height: 200%;
+	background-color: #ffffff;
+}
+A {
+	COLOR: #0000ff; TEXT-DECORATION: underline;
+}
+A:link {
+	COLOR: #0000ff; TEXT-DECORATION: underline;
+}
+A:visited {
+	COLOR: #9900ff; TEXT-DECORATION: underline;
+}
+A:hover {
+	COLOR: #0033ff; TEXT-DECORATION: underline;
+}
+A:active {
+	COLOR: #cc3300; TEXT-DECORATION: underline;
+}
+table
+{
+    BORDER-RIGHT: #ff0000 1px solid;
+    BORDER-TOP: #ff0000 1px solid;
+    BORDER-LEFT: #ff0000 1px solid;
+
+}
+th
+{
+   font-size: 11pt;
+   font-weight: bolder;
+   line-height: 140%;
+   BORDER-RIGHT: #ff0000 1px solid;
+   BORDER-BOTTOM: #ff0000 1px solid;
+}
+td
+{
+   font-weight: bolder;
+   font-size: 15pt;
+   line-height: 140%;
+    BORDER-RIGHT: #ff0000 1px solid;
+	BORDER-BOTTOM: #ff0000 1px solid;
+
+}
+p{
+	text-indent:2em;
+}
+.biaoti
+{
+	color: #ff3300;
+	font-weight: bolder;
+	font-size: 20pt;
+	font-family: 楷体_GB2312,宋体;
+}
+.biaoti2
+{
+	font-weight: bolder;
+	color: #0000ff;
+	font-size: 16pt;
+	font-family: 楷体_GB2312,宋体
+}
+.big{
+	font-weight:bolder;
+	font-size: 14pt
+}
+.bold
+{
+	font-weight:bolder
+}
+
+.gongshi
+{
+	border: 1px red solid;
+	padding: 3px;
+	background-color: #ffcccc;
+}
+.zhuyi
+{
+	color: #990000;
+	font-weight: bolder;
+}
+.tishi{
+	position: absolute;
+	background-color: #FFFFCC;
+	border: 1px solid #FFCC99;
+	width:500px;
+	padding: 5px;
+	visibility:hidden;
+	filter: Alpha(Opacity=90, Style=0);
+}

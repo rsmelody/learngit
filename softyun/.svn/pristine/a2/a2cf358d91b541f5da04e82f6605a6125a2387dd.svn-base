@@ -1,0 +1,2 @@
+<?php
+header("Location: http://98.softyun.sinaapp.com/website/index.html");

@@ -1,0 +1,13 @@
+function openFlash(path,winName,wid,hig){
+	var safeWin=window.open(path,winName,"width="+wid+",height="+hig);
+	safeWin.focus();
+}
+function showTishi(div){
+	//document.all[div].style.left=document.body.scrollLeft + window.event.clientX + "px";
+	//document.all[div].style.top=document.body.scrollTop + window.event.clientY + "px";
+	//window.status=(document.all[div].style.left)+":"+(document.all[div].style.top);
+	document.all[div].style.visibility='visible';
+}
+function hideTishi(div){
+	document.all[div].style.visibility='hidden';
+}

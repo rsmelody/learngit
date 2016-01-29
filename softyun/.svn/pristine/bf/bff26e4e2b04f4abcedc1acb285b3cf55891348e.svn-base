@@ -1,0 +1,436 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+em, img, small, strong, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+html {font-size: 100%; min-height: 100%; min-width:960px;}
+ol, ul {list-style: none;}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    background: #FFF;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei', Arial;
+}
+
+a {
+    color: #2E92D9;
+}
+
+h1 {
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    font-size: 28px;
+    color: #666;
+    position: relative;
+}
+
+.table {
+	color: #666666;
+	font-size: 15px;
+	margin: 0 2px;
+	table-layout: fixed;
+	width: 956px;
+}
+
+.table .act-tr {
+	border-bottom: 1px solid #EEEEEE;
+	width: 956px;
+}
+
+.table .td {
+	float: left;
+	display: inline;
+	padding: 2px;
+	text-align: center;
+}
+
+.hidden-template {
+	display: none;
+}
+
+.backtotop {
+	background-image: url("../images/backToTop.png?max_age=19830211&d=20130410154753");
+	background-position: 0 0;
+	bottom: 0;
+	display: block;
+	height: 50px;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	width: 51px;
+	z-index: 1000;
+}
+/* header */
+
+.header {
+	width: 100%;
+	height: 75px;
+	background-color: #3C404D;
+	border-bottom: 1px solid #1779BE;
+	overflow: hidden;
+}
+
+.header .nav {
+	width: 960px;
+	margin: 0 auto;
+	height: 75px;
+}
+
+.header ul li a {
+	display: block;
+	float: left;
+	color: #eee;
+	padding: 0 9px;
+	font-size: 20px;
+	line-height: 75px;
+	height: 75px;
+	position: relative;
+}
+
+.header .logo a {
+	width: 80px;
+	font-size: 40px;
+}
+
+.nav li a.active, 
+.nav li:hover a {
+	background: -moz-linear-gradient(center top , #343846 0px, #181B23 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	color: #9EDB48;
+}
+
+.rightMenu {
+	float: right;
+	display: inline;
+}
+
+.rightMenu li {
+	float: right;
+	display: inline;
+}
+
+/* end of header */
+
+
+/* content */
+
+.content {
+	border-bottom: 1px solid #E2E2E2;
+	width: 960px;
+	margin: 0 auto;
+	min-height: 400px;
+	padding: 5px 0;
+	overflow: hidden;
+	color: #2E92D9;
+}
+
+/* end of content */
+
+/* footer */
+
+.footer {
+	line-height: 20px;
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.footer .copyright {
+	color: #999999;
+	float: left;
+	display: inline;
+	font-size: 13px;
+	height: 40px;
+	padding: 5px 0 5px 5px;
+	width: auto;
+}
+
+.footer .footerLinks {
+	float: right;
+	display: inline;
+}
+
+.footer .footerLinks a {
+	color: #999999;
+}
+
+/* end of footer */
+
+/* 左右分栏 */
+
+.content .primary {
+	float: right;
+	display: inline;
+}
+
+.content .secondary {
+	float: left;
+	display: inline;
+}
+
+/* register */
+
+.primary .register {
+	width: 400px;
+	margin: 70px auto;
+}
+
+.registerLine {
+	height: 55px;
+	width: 400px;
+	overflow: hidden;
+}
+
+.registerLine label {
+	float: left;
+	display: inline;
+	font-size: 18px;
+	line-height: 40px;
+	width: 100px;
+	text-align: center;
+	color: #5F940A;
+}
+
+.register input {
+	float: left;
+	display: inline;
+	width: 280px;
+	font-size: 16px;
+	line-height: 38px;
+	height: 38px;
+	border-radius: 5px 5px 5px 5px;
+	border: 1px solid #CCCCCC;
+	padding-left: 5px;
+}
+
+.register input[type="submit"] {
+	margin-left: 100px;
+	width: 140px;
+	background-color: #5F940A;
+	border: none;
+	color: #EEEEEE;
+}
+
+.register input[type="submit"]:hover {
+	background-color: #9EDB48;
+}
+
+.secondary #intro {
+	width: 550px;
+}
+
+#intro h1 {
+	font-size: 70px;
+	width: 530px;
+	margin: 70px auto;
+}
+
+/* end of register */
+
+/* login */
+
+.primary .login {
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 1px solid;
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+	height: 300px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 450px;
+}
+
+.login form {
+	margin: 70px 25px;
+}
+
+.loginLine {
+	width: 400px;	
+	height: 55px;
+}
+
+.loginLine label {
+	display: inline;
+	float: left;
+	font-size: 18px;
+	line-height: 40px;
+	width: 100px;
+	color: #9EDB48;
+	text-align: center;
+}
+
+.loginLine input {
+	display: inline;
+	float: left;
+	width: 250px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 16px;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px 5px 5px 5px;
+	padding: 0 0 0 9px;
+	color: #666666;
+}
+
+.loginLine input[type="submit"] {
+	margin-left: 100px;
+	width: 140px;
+	background-color: #5F940A;
+	border: none;
+	color: #EEEEEE; 
+}
+
+.loginLine input[type="submit"]:hover {
+	background-color: #9EDB48;
+}
+
+.loginLine input:focus, registerLine input:focus {
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset, 0 0 12px rgba(255, 255, 255, 0.75);
+}
+
+/* end of login */
+
+/* list */
+.primary .urls {
+	overflow: hidden;
+}
+
+.urlLine {
+	width: 980px;
+	height: 40px;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 40px;
+	color: #2E2E2E;
+	overflow: hidden;
+}
+
+.urlLine .title {
+	float: left;
+	display: inline;
+	width: 260px;
+	padding-left: 10px;
+}
+
+.urlLine .url {
+	float: left;
+	display: inline;
+	width: 600px;
+	overflow: hidden;
+}
+
+.urlLine .op {
+	float: left;
+	display: inline;
+	width: 100px;
+}
+
+.firstLine {
+	color: #5F940A;
+	border-bottom: 1px dotted #E2E2E2;
+}
+
+.urlLine a {
+	color: #2E2E2E;
+}
+
+.urlLine .url a:hover {
+	text-decoration: underline;
+	color: #5F940A;
+}
+
+.urlLine .op a {
+	display: inline;
+	float: left;
+	color: #5F940A;
+	padding: 0 3px 0 5px;
+	text-decoration: underline;
+}
+
+/* end of list */
+
+/* add */
+.add, .edit {
+	margin: 50px 0 50px 10px;
+	overflow: hidden;
+}
+
+.add .addLine, .edit .editLine, .search .searchLine {
+	height: 55px;
+	width: 500px;
+	overflow: hidden;
+}
+
+.addLine label, .editLine label, .searchLine label {
+	display: inline;
+	float: left;
+	width: 100px;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	color: #5F940A;
+}
+
+.addLine input, .editLine input, .searchLine input {
+	display: inline;
+	float: left;
+	width: 350px;
+	border-radius: 5px 5px 5px 5px;
+	border: 1px solid #CCCCCC;
+	height: 38px;
+	line-height: 38px;
+	font-size: 20px;
+	padding-left: 5px;
+}
+
+.addLine input[type="submit"], .editLine input[type="submit"], .searchLine input[type="submit"] {
+	margin-left: 100px;
+	background-color: #5F940A;
+	width: 175px;
+	color: #EEEEEE; 
+}
+
+.addLine input[type="submit"]:hover, editLine input[type="submit"]:hover, .searchLine input[type="submit"]:hover {
+	background-color: #9EDB48;
+}
+
+.intro {
+	width: 380px;
+	font-size: 20px;
+	margin: 50px 0 50px 20px;
+	color: #CCCCCC;
+}
+
+/* end of add */
+
+/* search */
+
+.search .urls h2 {
+	padding-left: 10px;
+	padding-top: 10px;
+	font-size: 20px;
+	color: #CCCCCC;
+	border-top: 1px dotted;
+}
+
+.search {
+	width: 960px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.search .urls {
+	margin-top: 30px;
+}

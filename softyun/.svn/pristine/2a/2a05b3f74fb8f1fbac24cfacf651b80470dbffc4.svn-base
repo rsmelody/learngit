@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> New Document </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <LINK REL=StyleSheet HREF="content.css" TITLE="content" TYPE="text/css">
+ </HEAD>
+
+<BODY>
+<h1 align="center">同方向简谐运动合成模拟</h1> <a href="sy/jxyd.html" target="black">进入试验</a>
+
+<h2>1.演示原理：</h2>
+<p>利用flash，可以把复杂的简谐运动合成通过图像生动的显示出来，让学习过程更加形象，通过图像加深了印象。</p>
+
+<h2>2.FLASH相关说明：</h2>
+ <p>演示时中可以通过改变两简谐波的振幅，周期，初相，在flash中通过勾选可以在面板中显示需要显示波的个数，利用放大缩小按钮使图像更精确。在图像中移动鼠标可以在flash左下角显示对应位置的时间和位移。</p>
+
+<h2>3.相关知识：</h2>
+<p>公式推导：
+一  两个同方向同频率简谐运动的合成<img src="formula/jxzd/image001.gif" align="absmiddle"><br><img src="formula/jxzd/image002.gif" align="absmiddle"><br>
+ 
+ 
+两振动的位相差<img src="formula/jxzd/image003.gif" align="absmiddle"><br><img src="formula/jxzd/image004.gif" align="absmiddle"><br><img src="formula/jxzd/image005.gif" align="absmiddle"><br><img src="formula/jxzd/image006.gif" align="absmiddle"><br>
+ 
+ 
+ 
+两个同方向同频率简谐运动合成后仍为同频率的简谐运动</p>
+<p>1.	相位差
+加强点：<img src="formula/jxzd/image007.gif" align="absmiddle"><br><img src="formula/jxzd/image008.gif" align="absmiddle"><br><img src="formula/jxzd/image009.gif" align="absmiddle"><br><img src="formula/jxzd/image010.gif" align="absmiddle"><br>
+    
+ 
+ 
+减弱点：<img src="formula/jxzd/image011.gif" align="absmiddle"><br><img src="formula/jxzd/image012.gif" align="absmiddle"><br><img src="formula/jxzd/image013.gif" align="absmiddle"><br><img src="formula/jxzd/image014.gif" align="absmiddle"> <br> 
+      
+ 
+  </p>
+<p>2.一般情况<img src="formula/jxzd/image015.gif" align="absmiddle">
+ 
+二 两个同方向不同频率简谐运动的合成<img src="formula/jxzd/image016.gif" align="absmiddle"><br><img src="formula/jxzd/image017.gif" align="absmiddle"><br>
+ 
+ 
+讨论<img src="formula/jxzd/image018.gif" align="absmiddle"> ，<img src="formula/jxzd/image019.gif" align="absmiddle"> 的情况
+ 
+ <img src="formula/jxzd/image020.gif" align="absmiddle"><br><img src="formula/jxzd/image021.gif" align="absmiddle"><br>
+振幅频率 <img src="formula/jxzd/image022.gif" align="absmiddle"><br>
+振幅 <img src="formula/jxzd/image023.gif" align="absmiddle"><br>
+
+     <img src="formula/jxzd/image024.gif" align="absmiddle">得<img src="formula/jxzd/image025.gif" align="absmiddle"> <br>   
+ </p><img src="formula/jxzd/image026.gif" align="absmiddle">
+<h2>4.讨论：</h2>
+<p>演示时要考虑到数据得到小，不能超过实验量程，否则无法反应出实验的效果。</p>
+
+
+
+
+
+
+
+ </BODY>
+</HTML>

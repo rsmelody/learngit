@@ -1,0 +1,61 @@
+function expand(num){
+	var divId="d"+num;
+	var spanId="s"+num;
+	if(document.all[divId].style.display=="none"){
+		document.all[divId].style.display="block";
+		document.all[spanId].innerHTML="-";
+	}else{
+		document.all[divId].style.display="none";
+		document.all[spanId].innerHTML="+";
+	}树
+}
+var treemenu=new Array();
+treemenu["实验室介绍=>sysjs.htm"]="";
+treemenu["力学=>xkjs/lx.html"]=new Array("刚性小球弹性碰撞的模拟=>js/gxxqjs.html","斜抛运动模拟=>js/xpydjs.html");
+treemenu["光学=>xkjs/gx.html"]=new Array("劈尖干涉与牛顿环模拟=>js/pjgsjs.html","光的双缝干涉模拟=>js/sfgsjs.html");
+treemenu["波动=>xkjs/bd.html"]=new Array("波动模拟演示=>js/bdjs.html");
+treemenu["振动=>xkjs/zd.html"]=new Array("弹簧振子运动模拟=>js/thzzjs.html","同方向简谐运动合成模拟=>js/jxydjs.html","李萨如图形模拟=>js/lsrtjs.html");
+treemenu["相对论=>xkjs/xdl.html"]=new Array("狭义相对论时空观的模拟=>js/xyxdljs.html");
+treemenu["其他=>jsz.htm"]=new Array("其他实验=>jsz.htm");
+var num=0;
+function writeTreemenu(treemenu,space){
+	for(var mainmenu in treemenu){
+		var dataLink=mainmenu.split("=>");
+		if(dataLink.length==1)dataLink[1]="#";
+		var clickReturn="return false;";
+		if(dataLink[1]!="#")clickReturn="";
+		if(typeof treemenu[mainmenu] == "object"){
+			var len=treemenu[mainmenu].length;
+			num++;
+			document.writeln("<br>"+space+"<span id='s"+num+"' class='icon'>+</span> <a href='"+dataLink[1]+"' onclick='expand("+num+");"+clickReturn+"'>"+dataLink[0]+"</a>");
+			document.writeln("<div id='d"+num+"' style='display: none; width: 200px'>");
+			for(var i=0;i<len;++i){
+				var dataLink=treemenu[mainmenu][i].split("=>");
+				if(dataLink.length==1)dataLink[1]="#";
+				var clickReturn=" onclick='return false;'";
+				if(dataLink[1]!="#")clickReturn="";
+				document.writeln("<br>"+space+"&nbsp;&nbsp;⊙ <a href='"+dataLink[1]+"'"+clickReturn+">"+dataLink[0]+"</a>");
+			}
+			if(len==0){
+				writeTreemenu(treemenu[mainmenu],space+"&nbsp;&nbsp;");
+			}
+			document.writeln("</div><br>");
+		}else{
+			document.writeln("<br>"+space+"□ <a href='"+dataLink[1]+"'>"+dataLink[0]+"</a><br>");
+		}
+	}
+}
+writeTreemenu(treemenu,"&nbsp;");
+function showAllDiv(s){
+	for(var i=1;i<=num;++i){
+		var divId="d"+i;
+		var spanId="s"+i;
+		if(s){
+			document.all[divId].style.display="block";
+			document.all[spanId].innerHTML="-";
+		}else{
+			document.all[divId].style.display="none";
+			document.all[spanId].innerHTML="+";
+		}
+	}
+}

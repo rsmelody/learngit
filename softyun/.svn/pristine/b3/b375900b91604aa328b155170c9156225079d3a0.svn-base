@@ -1,0 +1,99 @@
+<?php
+//连接MySQL
+function dbConnect(){
+	//$result = mysql_connect("localhost", "melody", "123456", "messages");
+	$result = new mysqli("localhost", "melody", "123456", "messages");
+	if (!$result){
+		die('Could not connect: ' . mysql_error());
+	}
+	return $result;
+}
+	
+$conn = dbConnect();
+
+$row  = $conn->query("select * from user");
+while($res  = $row->fetch_array()){
+	var_dump($res);
+}
+exit;
+
+
+
+//添加注册用户
+function register($username, $password, $email)
+{
+	$password = md5($password);
+
+	$conn = dbConnect();
+	
+	$row  = mysql_query("select max(uid) as num from user", $conn);
+	$row  = mysql_fetch_array($row);
+	$num  = $row['num'];
+	$uid  = ++$num;
+	
+	$res  = $conn->query("insert into user values('$uid', '$username', '$password', '$email')");
+	return $res;
+}
+
+//验证用户信息
+function verifyUser($username, $password)
+{
+	$password = md5($password);
+	
+	$conn = dbConnect();
+	$res  = $conn->query("select * from user where username='$username' and password='$password'");
+	$row  = $res->fetch_array();
+
+	return $row;
+}
+
+//通过uid获得标签信息
+function getUrls($uid)
+{
+	$conn = dbConnect();
+	$res  = $conn->query("select * from urls where uid='$uid'");
+
+	return $res;
+}
+
+//搜索用户标签信息
+function searchUrls($uid, $title, $url)
+{
+	$conn = dbConnect();
+	$res  = $conn->query(
+		"select * from urls where uid='$uid' 
+		and title like '%$title%' 
+		and url  like '%$url%'");
+
+	return $res;
+}
+
+//通过urlId获得书签信息
+function getUrlsByUrlId($urlId)
+{
+	$conn = dbConnect();
+	$res  = $conn->query("select * from urls where urlId='$urlId'");
+
+	return $res;
+}
+
+//更新书签
+function updateUrls($urlId, $title, $url)
+{
+	$conn = dbConnect();
+	$res  = $conn->query("update urls set title='$title', url='$url' 
+						where urlId='$urlId'");
+	
+	return $res;
+}
+
+//删除书签
+function delUrls($urlId)
+{
+	$conn = dbConnect();
+	$res  = $conn->query("delete from urls where urlId='$urlId'");
+
+	return $res;
+}
+
+?>

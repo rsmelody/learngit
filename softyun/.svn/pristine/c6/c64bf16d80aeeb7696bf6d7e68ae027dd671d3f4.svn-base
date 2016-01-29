@@ -1,0 +1,41 @@
+<?php include("header.php"); ?>
+
+	<div class="content">
+	<div class="primary">
+		<div class="login">
+			<form name="login" action="loginValid.php" method="post"                             onsubmit="return CheckPost();">
+				<div class="loginLine">
+					<label for="username">用户名</label>
+					<input type="text" name="username" id="username"/>
+				</div>
+				<div class="loginLine">
+					<label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+					<input type="password" name="password" id="password" />
+				</div>
+				<div class="loginLine">
+					<input type="submit" name="login" value="登录" />
+				</div>
+		 	</form>
+		  </div>
+	  </div>
+   </div>
+
+ <script language="JavaScript">
+	$("#username").focus();
+
+	function CheckPost(){
+        if(login.username.value==""){
+			alert("用户名不能为空");
+			login.username.focus();
+			return false;
+		}
+	
+		if(login.password.value==""){
+			alert("请填写密码");
+			login.password.focus();
+			return false;
+		}      
+	}
+
+</script>
+  <?php include("footer.html");?>

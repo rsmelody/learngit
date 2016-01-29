@@ -1,0 +1,21 @@
+<?php include TPL_PATH . "/header.phtml"; ?>
+<div class="content">
+	<div class="primary">
+		<div class="login">
+			<form name="login" method="post">
+				<div class="loginLine">
+					<label for="username">用户名</label>
+					<input type="text" name="username" id="username"/>
+				</div>
+				<div class="loginLine">
+					<label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+					<input type="password" name="password" id="password" />
+				</div>
+				<div class="loginLine">
+					<input type="submit" name="register" value="登录" />
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<?php include TPL_PATH . "/footer.phtml"; ?>

@@ -1,0 +1,13 @@
+<!-- #footer -->
+<div class="footer">
+	<div class="copyright">
+		@2013 tbapps.com 版权所有
+		<br />
+		1234号
+	</div>
+	<div class="footerLinks">
+		Melody
+	</div>
+</div>
+</body>
+</html>

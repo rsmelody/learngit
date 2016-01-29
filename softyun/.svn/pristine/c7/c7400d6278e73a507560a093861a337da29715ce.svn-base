@@ -1,0 +1,26 @@
+<?php include TPL_PATH."/header.phtml";?>
+
+<div class="content">
+	<div class="breadcrumbs">
+		<span>设置自动橱窗</span>
+	</div>
+	<div class="primary">
+		<h2>测试</h2>
+	</div>
+	<div class="secondary">
+		<ul style="display: block">
+			<li><h4><a href="#"><span class="arrow active"></span>自动橱窗</a></h4></li>
+				<ul style="display: none;">
+					<li><h5><a href="#">橱窗开关</a></h5></li>
+					<li><a href="#">橱窗设置</a></li>
+					<li><a href="#">橱窗列表</a></li>
+					<li><a href="#">手动橱窗</a></li>
+				</ul>
+			<li><h4><a href="#">自动上架</a></h4></li>	
+			<li><h4><a href="#">标题优化</a></h4></li>
+			<li><h4><a href="#">自动评价</a></h4></li>
+		</ul>
+	</div>
+</div>
+
+<?php include TPL_PATH ."/footer.phtml"; ?>

@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> New Document </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <LINK REL=StyleSheet HREF="content.css" TITLE="content" TYPE="text/css">
+ </HEAD>
+
+<BODY>
+<h1 align="center">双缝干涉模拟</h1> <a href="sy/gdgs.html" target="black">进入试验</a>
+
+<h2>1、	演示原理：</h2>
+  <p> 双缝干涉实验在实验中是经常碰到到的光学实验，由于实验中经常要避免光线的干扰，和实验器材的限制做双缝干涉实验较为麻烦，而利用flash我们可以不用担心这些问题，这flash中可以很好地描述出光线的一些情况。
+
+<h2>2、	FLASH相关说明：</h2>
+  <p> Flash中，演示时可以通过操作界面设置 光的波长，位置。双缝的位置和缝宽与介质的折射率，在flash中就有相应的光线干涉图像实时的显示出来。</p> 
+
+<h2>3、	相关知识：</h2>
+     <p>  S 发出的光波射到光屏上的两个小孔S1和S2 ,S1 和S2 相距很近,且到S等距;从S1 和S2 分别发散出的光波是由同一光波分出来的,所以是相干光波,它们在距离光屏为D 的屏幕上叠加,形成一定的干涉图样。图1杨氏双缝干涉装置假设S是单色点光源,考察屏幕上某一点P ,从S1 和S2 发出波在该强度为:<img src="公式编辑/双缝干涉/1/image002.gif" align="absmiddle">(1) </p>                    
+<p> (1)式中, I1 和I2 分别是两光波在屏幕上的光强度, 若实验装置中S1 和S2两小孔大小相等, 则有I1 = I2 =I0 ; </p> 
+<p> δ是相位差: </p> 
+    <img src="公式编辑/双缝干涉/2/image002.gif" align="absmiddle">                  ,                         (2)</p> 
+<p> 由　<img src="公式编辑/双缝干涉/3/image002.gif" align="absmiddle">　　　　                              (3) 
+　　　　　  　        ,<img src="公式编辑/双缝干涉/4/image002.gif" align="absmiddle">                   　 (4) </p>     
+<p> 可得<img src="公式编辑/双缝干涉/5/image002.gif" align="absmiddle"> ,因此由光程差:  <img src="公式编辑/双缝干涉/6/image002.gif" align="absmiddle">    
+                           ,                     (5)</p> 
+<p> 在实际情况中,D>>d可以用2D代替<img src="公式编辑/双缝干涉/7/image002.gif" align="absmiddle"> ,在这一近似下,上式变成: <img src="公式编辑/双缝干涉/8/image002.gif" align="absmiddle">
+                                              (6)</p> 
+<p> 则可以得到条纹的强度变化规律- 强度分布公式:<img src="公式编辑/双缝干涉/9/image002.gif" align="absmiddle">
+                                               (7)</p> 
+<p> 条纹间距: <img src="公式编辑/双缝干涉/10/image002.gif" align="absmiddle">          。</p> 
+ 
+<h2>4、	讨论：</h2>
+  <p> 实际实验中为获取相干光，要在双缝前要加单缝和滤光片，以获取能够相干的光。</p> 
+
+
+
+
+
+
+ </BODY>
+</HTML>

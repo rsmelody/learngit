@@ -1,0 +1,19 @@
+<?php
+include("messagesFns.php");
+
+//获得用户注册的信息
+$email    = $_POST['email'];
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+var_dump($_POST);exit;
+//添加注册用户
+$res = register($username, $password, $email);
+if ($res) {
+		header('Location: http://1.softyun.sinaapp.com/messages/login.php');
+} else {
+		header('Location: http://1.softyun.sinaapp.com/messages/register.php');
+}
+exit;
+  
+?>

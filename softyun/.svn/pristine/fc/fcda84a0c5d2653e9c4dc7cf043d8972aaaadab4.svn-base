@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> New Document </title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <LINK REL=StyleSheet HREF="content.css" TITLE="content" TYPE="text/css">
+ </HEAD>
+
+<BODY>
+<h1 align="center">弹簧振子运动模拟</h1> <a href="sy/thzz.html" target="black">进入试验</a>
+<h2>1、演示原理:</h2>
+<p>弹簧振子是一个不考虑摩擦阻力，不考虑弹簧的质量，不考虑振子（金属小球）的大小和形状的理想化的物理模型。用来研究简谐振动的规律。轻质弹簧质量远小于金属小球的质量，故可忽略不计。把小球拉倒一定位移后，在弹簧回复力和小球惯性的作用下小球在水平面内做简谐运动。利用flash，我们可以较为生动的观察出小球的运动规律。</p>
+
+<h2>2、FLASH相关说明：</h2>
+<p>Flash中，我们可以通过界面下方设置处，输入小球的初始位移和和初始速度还有角频率，也可以通过鼠标拖拽小球设置小球的处位移。点击运行按钮，就可以在flash中观察到小球的运动情况。并且在flash界面下方显示有小球对应的振幅，周期，处相位。</p>
+
+<h2>3、相关知识点：</h2>
+     <p>弹簧振子的周期为T=2π√(m/k)其中K表示弹簧的劲度系数m表示弹簧振子（小球）的质量。公式的推导过程由简谐振动位移公式x=Asinωt <1>对时间t求一次导数:v=Aωcosωt再对时间t求一次导数:a=-Aω^2sinωt=-ω^2x <2>再考虑简谐振动的力的公式-kx=ma <3>比较<1>、<2>、<3>三式（代入）有-kAsinωt=-mAω^2sinωt整理得ω^2=k/m开方得ω=√(k/m)，则T=2π/ω=2π√(m/k)。</p>
+
+<h2>4、讨论：</h2>
+<p>Flash中，小球设置的初速度和处位移不能超过量程。否则flash无法执行。</p>
+
+ </BODY>
+</HTML>

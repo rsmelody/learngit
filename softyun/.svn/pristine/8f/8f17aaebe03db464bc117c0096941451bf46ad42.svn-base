@@ -1,0 +1,122 @@
+<?php
+/**
+ * 书签函数集合
+ */
+
+function dbConnect(){
+	include("copy/mysql.php");
+	$result = MySql::getInstance();
+
+	return $result;
+}
+
+//添加注册用户
+function register($username, $password, $email)
+{
+	$password = md5($password);
+
+	$conn = dbConnect();
+	$res  = $conn->query("select max(uid) as num from user");
+	$row  = $conn->fetch_array($res);
+	$num  = $row['num'];
+	$uid  = ++$num;
+
+	$res2 = $conn->query("insert into user values('$uid', '$username', '$password', '$email')");
+
+	return $res2;
+}
+
+//更新用户信息
+function updateUser($uid, $sid)
+{
+	$conn = dbConnect();
+	$res  = $conn->query("update user set sessionId = '$sid' where uid='$uid'");
+
+	return $res;
+}
+
+//验证用户信息
+function verifyUser($username, $password)
+{
+	$password = md5($password);
+
+	$conn = dbConnect();
+	$res  = $conn->query("select * from user where username='$username' and password='$password'");
+	$row  = $conn->fetch_array($res);
+
+	return $row;
+}
+
+//通过uid获得标签信息
+function getUrls($uid)
+{
+	$conn = dbConnect();
+	$res  = $conn->query("select * from urls where uid='$uid'");
+	$urls = array();
+	while ($row = $conn->fetch_array($res)){
+		$urls[] = $row;
+	}
+
+	return $urls;
+}
+
+//搜索用户标签信息
+function searchUrls($uid, $title, $url)
+{
+	$conn = dbConnect();
+	$res  = $conn->query(
+			"select * from urls where uid='$uid' 
+			and title like '%$title%' 
+			and url  like '%$url%'");
+	$urls = array();
+	while ($row = $conn->fetch_array($res)){
+		$urls[] = $row;
+	}
+
+	return $urls;
+}
+
+//通过urlId获得书签信息
+function getUrlsByUrlId($urlId)
+{
+	$conn = dbConnect();
+	$res  = $conn->query("select * from urls where urlId='$urlId'");
+	$url  = $conn->fetch_array($res);
+
+	return $url;
+}
+
+//添加书签
+function addUrls($uid, $title, $url)
+{
+	$conn  = dbConnect();
+	$res1  = $conn->query("select max(urlId) as num from urls");
+	$row   = $conn->fetch_array($res1);
+	$num   = $row['num'];
+	$urlId = ++$num;
+
+	$res2  = $conn->query("insert into urls values('$uid', '$urlId', '$title', '$url')");
+
+	return $res2;
+}
+
+//更新书签
+function updateUrls($urlId, $title, $url)
+{
+	$conn = dbConnect();
+	$res  = $conn->query("update urls set title='$title', url='$url' 
+			where urlId='$urlId'");
+
+	return $res;
+}
+
+//删除书签
+function delUrls($urlId)
+{
+	$conn = dbConnect();
+	$res  = $conn->query("delete from urls where urlId='$urlId'");
+
+	return $res;
+}
+
+

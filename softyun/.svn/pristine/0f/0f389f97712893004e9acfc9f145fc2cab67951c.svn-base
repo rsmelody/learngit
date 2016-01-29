@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> New Document </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <LINK REL=StyleSheet HREF="content.css" TITLE="content" TYPE="text/css">
+ </HEAD>
+
+<BODY>
+<h1 align="center">斜抛运动模拟</h1> <a href="sy/xpyd.html" target="black">进入试验</a>
+
+<h2>1、	演示原理：</h2>
+    <p>小球斜抛运动是物理实验中常遇到的问题，由于实验中有空气阻力的作用，很难以利用简单的数学方法分析出小球的运动状态，但是利用FLASH动画，我们可以直观的分析小球斜抛运动中，小球上抛的高度和抛射的距离与斜抛角度的关系。 </p>
+<h2>2、	FLASH相关说明：</h2>
+ <p>Flash中我们可以通过按钮设置小球得质量，阻尼系数，和小球受到阻力与速度的关系，初始速度，通过开始按钮可以在flash中看到小球相应的运动图像，通过返回按钮改变不同的初始数据可以在flash中显示另一个图像，让我们可以直观的看出小球不同初始量所产生的效果进行对比。 </p>
+
+<h2>3、	相关知识：</h2>
+    <p> 斜抛运动是将物体以一定的初速度和与水平方向成一定角度抛出，在重力作用下，物体作匀变速曲线运动，它的运动轨迹是斜抛线，这种运动叫做“斜抛运动”。 </p>
+    根据运用独立性原理,可以把斜抛运动看成是作水平方向的变速运动和竖直上抛运动的合运动来处理。
+     <p>斜抛运动的三要素是射程、射高和飞行时间。 </p>
+
+<h2>4、	讨论：</h2>
+ <p>小球斜抛运动难点在于是否考虑空气的阻力，在不考虑空气阻力的情况下分析小球运动简单的多，实验时要分析小球受阻力与速度之间的关系运用那个较为合理。 </p>
+
+
+
+
+
+
+
+
+ </BODY>
+</HTML>

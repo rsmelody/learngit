@@ -1,0 +1,67 @@
+<?php 
+include("sessionValid.php");
+include("messagesFns.php");
+include("header.php");  
+?>
+
+<div class="content">
+<div class="search">
+<form name="searchUrl" method="post" action="search.php">
+<div class="searchLine">
+<label for="title">Title</label>
+<input type="text" name="title" id="title" value="<?php if (isset($title)) echo $title; ?>" />
+</div>
+<div class="searchLine">
+<label for="url">Url</label>
+<input type="text" name="url" id="url" value="<?php if (isset($url)) echo $url; ?>" />
+</div>
+<div class="searchLine">
+<input type="submit" name="submit" value="搜索" />
+</div>
+</form>
+<?php
+if ($_POST['submit']){
+	$title = $_POST['title'];
+	$url   = $_POST['url'];
+	$uid   = $_SESSION['validUid'];
+	$urls  = searchUrls($uid, $title, $url);
+
+	if (isset($urls)) {
+		?>
+			<div class="urls">
+			<h2>搜索结果:</h2>
+			<div class="urlLine firstLine">
+			<div class="title">Title</div>
+			<div class="url">Url</div>
+			</div>
+			<?php 
+			foreach ($urls as $url) {
+				?>  
+					<div class="urlLine">
+					<div class="title">
+					<?php
+					echo $url['title'] . "&nbsp;&nbsp;";
+				?>  
+					</div>
+					<div class="url">
+					<?php
+					echo "<a href=" . $url['url'] . " target=\"_blank\">" . $url['url'] . "</a>";
+				?>  
+					</div>
+					<div class="op">
+					<input type="hidden" class="urlId" value="<?php echo $url['urlId']; ?>" />
+					<a class="editBtn" href="edit.php?urlId=<?php echo $url['urlId']; ?>">修改</a>
+					<a class="deleteBtn" href="del.php?urlId=<?php echo $url['urlId']; ?>">删除</a>
+					</div>
+					</div>
+					<?php
+			}   
+		?>
+			</div>
+			<?php 
+	}
+}
+?>
+</div>
+</div>
+<?php include("footer.html");?>

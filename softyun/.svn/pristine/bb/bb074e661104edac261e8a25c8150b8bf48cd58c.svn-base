@@ -1,0 +1,12 @@
+<?php 
+include("sessionValid.php");
+include("messagesFns.php");
+
+//»ñµÃurlId
+$urlId = $_GET['urlId'];
+
+//É¾³ýÊéÇ©
+$res = delUrls($urlId);
+header('Location: http://1.softyun.sinaapp.com/messages/list.php');
+
+?>

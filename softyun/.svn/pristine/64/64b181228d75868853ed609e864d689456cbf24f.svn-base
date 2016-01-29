@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> New Document </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <LINK REL=StyleSheet HREF="content.css" TITLE="content" TYPE="text/css">
+ </HEAD>
+
+<BODY>
+<h1 align="center">狭义相对论的时空观的模拟</h1> <a href="sy/xyxdl.html" target="black">进入试验</a>
+
+<h2>1、	演示原理：</h2>
+    <p> 物质在相互作用中作永恒的运动，没有不运动的物质，也没有无物质的运动，由于物质是在相互联系，相互作用中运动的，因此，必须在物质的相互关系中描述运动，而不可能孤立的描述运动。也就是说，运动必须有一个参考物，即必须在某一个参考系下描述运动。Flash中分别对地面和小车作为参考系进行了分析，形象的描述了不同情况下的现象。  </p>
+
+<h2>2、	FLASH相关说明：</h2>
+  <p>Flash中可用通过设置声源在小车中的相对位置和小车的速度。在不同参考系条件下同时相对性，时间延缓的实验现象，在flash的左上角显示有时间间隔和声音传播距离的差。 </p>
+
+<h2>3、	相关知识：</h2>
+  <p>1.同时的相对性 </p>
+  <p>在牛顿力学中，时间是绝对的。两事件在惯性系 S 中观察是 同时发生的，那么在另一惯性系S'中观察也是同时发生的。 狭义相对论则认为：这两个事件在惯性系S中观察是同时的， 而在惯性系S' 观察就不会再是同时的了。这就是狭义相对论的 同时相对性。 </p>
+  <p>2.时间的延缓 </p>
+     <p>  既然同时性是相对的，那么两个事件的时间间隔或一个事件持续时间的量度也是随参照系而改变的。设在S' 系中观察一事件发生在 处，事件开始于<img src="公式编辑/狭义相对论时空观/image001.gif" align="absmiddle"> ，结束于<img src="公式编辑/狭义相对论时空观/image003.gif" align="absmiddle">  ，经历的时间间隔是<img src="公式编辑/狭义相对论时空观/image005.gif" align="absmiddle"> 。在某一参照系中同一地点先后发生的两个事件之间的时间间隔称为固有时，用 表示，它是静止于此参照系中的一只钟测出的。因此在S' 中测出的时间间隔 就是固有时 。
+    若在S系中观察该事件过程，事件开始于<img src="公式编辑/狭义相对论时空观/image007.gif" align="absmiddle"> ，结束于<img src="公式编辑/狭义相对论时空观/image009.gif" align="absmiddle"> ，经历的时间间隔是<img src="公式编辑/狭义相对论时空观/image011.gif" align="absmiddle"> 。 称为运动时，用 表示，<img src="公式编辑/狭义相对论时空观/image013.gif" align="absmiddle"> 。由洛仑兹变换<img src="公式编辑/狭义相对论时空观/image015.gif" align="absmiddle"> </p>
+  <p> 
+即  <img src="公式编辑/狭义相对论时空观/image017.gif" align="absmiddle"> </p>                
+   <p>因此，从相对于发生事件的地点作相对运动的参照系中所测得的时间间隔要比从相对静止的参照系中所测得的时间间隔长，即运动时大于固有时，固有时最短。这就是狭义相对论中的时间膨胀。固有时与在其它参照系测出的运动时的关系，还可以用时钟走的快慢来说明。S系中的观察者将相对于他运动的S' 系中的那只记录固有时的钟同自己的许多同步的钟对比，发现S' 系中的那只钟慢了。这个效应叫做运动的钟时间延缓。 </p>
+
+<h2>4、	讨论：</h2>
+  <p> 1.同时性是相对的 。 </p>
+
+
+
+
+
+
+
+
+ </BODY>
+</HTML>

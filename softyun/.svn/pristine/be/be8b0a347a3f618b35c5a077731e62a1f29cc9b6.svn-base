@@ -1,0 +1,6 @@
+<?php
+echo $code . '<br />';
+echo $message . '<br />';
+echo $file . '<br />';
+echo $line . '<br />';
+?>

@@ -1,0 +1,11 @@
+<?php
+include("sessionValid.php");
+
+//删除当前用户对应的session文件
+session_unset();
+
+header('Location: http://1.softyun.sinaapp.com/messages/login.php');
+exit;
+
+
+?>

@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>集美大学模拟物理实验室</title>
+<meta name="description" Content="大学物理实验,集美大学,理学院,物理系">
+<meta name="keywords" content="大学物理实验,集美大学,理学院,物理系">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<style type="text/css">
+<!--
+A {
+	COLOR: #66ff66; TEXT-DECORATION: none; font-weight: bolder;
+}
+A:link {
+	COLOR: #66ff66; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #00ff00; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #FFFFFF; background-color: #666666;  TEXT-DECORATION: none;
+}
+A:active {
+	COLOR: #00ffff; background-color: #000099; TEXT-DECORATION: none
+}
+body {
+	background-color:#6666FF;
+	margin-top:0;
+}
+div {
+	line-height: 26px;
+}
+.banner {
+	background-color: #003399;
+	background-repeat: no-repeat;
+	background-position : bottom left;
+	color: #ff3300;
+	font-family: 华文新魏,楷体_gb2312,黑体,宋体;
+	font-size: 36pt;
+	font-weight: bolder;
+	text-align: center;
+}
+.nav {
+	background-color: #000099;
+	background-repeat:no-repeat;
+	background-position : top left
+	font-size:20pt;
+	color:#ffffff;
+}
+.icon {
+	border: 1px white solid;
+	padding: 1px;
+}
+.active{
+	background-color: dimgray;
+	color: #ffffff;
+}
+-->
+</style>
+<base target="content">
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onLoad="window.defaultStatus='★欢迎使用虚拟物理实验室';return true">
+
+<table  align="center" width="955" height="95%" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="middle" height="150">
+    <td class="banner" colspan="2" background="images/1.JPG";>集美大学虚拟物理实验室</td>
+  </tr>
+  <tr>
+		<td class="nav" valign="top" align="left" width="202" background="images/2.JPG";>
+		<div id="navControl" align="right" ><a href="#" onclick='showAllDiv(0);return false;' title='缩进'>■</a>&nbsp;&nbsp;<a href="#" onclick='showAllDiv(1);return false;' title='展开'>〓</a>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+		<script language="javascript" src="treemenu.js"></script>
+		</td>
+        <td bgcolor="#ccffff" width="755">
+		  <iframe name="content" src="sysjs.htm"  width="100%" height="100%" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"> 
+          </iframe>
+		</td>
+  </tr>
+	<tr height="30">
+	 <td align="center" style="font-size:9pt;color:#ffffff" colspan="2">
+   <hr width="80%">版权所有 &copy; <a href="http://pec.jmu.edu.cn/" target="_blank">集美大学物理实验中心</a> 2013　Tel: 0592-6181615 Email: <a href="mailto:wlsys@jmu.edu.cn">wlsys@jmu.edu.cn</a>
+   </td>
+	</tr>
+</table><br>
+<script language="JavaScript">
+<!--
+	$(document).ready(function(){
+	    $("[href = 'sysjs.htm']").addClass('active');
+			$(".nav a").live("click", function(){
+				if($(this).hasClass('active')) {
+              return false;
+        }	
+
+				$(".nav a").removeClass('active');
+				$(this).addClass('active');
+			});		
+	});
+//-->
+</script>
+</body>
+</html>

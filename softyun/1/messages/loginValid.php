@@ -1,0 +1,23 @@
+<?php
+session_start();
+include("messagesFns.php");
+
+//获得用户登录的信息
+$username  = $_POST['username'];
+$password  = $_POST['password'];
+
+//验证用户信息
+$res = verifyUser($username, $password);
+if ($res) {
+	$_SESSION['validUser'] = $res['username'];
+	$_SESSION['validUid']  = $res['uid'];
+	$uid = $res['uid'];
+	$sid = md5($uid);
+
+	header("Location: http://1.softyun.sinaapp.com/messages/list.php");
+} else {
+	header("Location: http://1.softyun.sinaapp.com/messages/login.php");
+}
+exit; 
+
+?>

@@ -1,0 +1,4 @@
+<?php include TPL_PATH . "header.phtml"; ?>
+<div class="content">
+</div>
+<?php include TPL_PATH . "footer.phtml"; ?>

@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> New Document </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <LINK REL=StyleSheet HREF="content.css" TITLE="content" TYPE="text/css">
+ </HEAD>
+
+<BODY>
+<h1 align="center">刚性小球弹性碰撞的模拟</h1> <a href="sy/gxxq.html" target="black">进入试验</a>
+
+<h2>1、 演示原理：</h2>
+<p>小球弹性碰撞通过FLASH展示在一个固定的方框中，有多个小球运动在随机运动，每个小球都有随机的颜色，随机的速度和随机的运动方向，而且每个球的大小不同，当球碰到边框会反弹，每个小球通过一个线程控制，通过缓存替换的方式来进行画面的重绘。检测小球的碰撞情况。</p>
+
+<h2>2、FLASH相关说明：</h2>
+<p>通过页面选项可进行对球的设计，可以设置了小球的最小、最大速度，球的数目，运动区域的宽度和长度，并且可以有效的跟踪某个指定小球，并通过选择显示轨迹，显示指定小球的运动轨迹。此外，在页面中，可以时时的显示区域运动小球的运动时间、平均速率、平均能量和碰撞效率。</p>
+
+<h2>3、相关知识点：</h2>   
+   <p>完全弹性碰撞（Perfect Elastic Collision），在理想情况下，完全弹性碰撞的物理过程满足动量守恒和能量守恒。如果两个碰撞小球的质量相等，联立动量守恒和能量守恒方程时可解得：两个小球碰撞后交换速度。如果被碰撞的小球原来静止，则碰撞后该小球具有了与碰撞小球一样大小的速度，而碰撞小球则停止。多个小球碰撞时可以进行类似的分析。</p>
+
+<h2>4、讨论：</h2>
+   <p>真实环境中，空间中的小球弹性碰撞会一直持续下去吗？
+   现实中，由于小球间的碰撞并非理想的弹性碰撞，还会有能量的损失，所以最后小球还是要停下来。</p>
+
+
+
+ </BODY>
+</HTML>
